@@ -18,6 +18,7 @@ import {
 } from './styles';
 
 import pp2 from '../../styles/assets/pp2.png';
+import img from '../../styles/assets/img.jpg';
 
 const Tweet = () => {
     return (
@@ -42,7 +43,9 @@ const Tweet = () => {
 
                     <Description>Olhem que imagem bacana</Description>
 
-                    <ImageContent />
+                    <ImageContent>
+                        <img src={img} alt="" />
+                    </ImageContent>
 
                     <Icons>
                         <Status>

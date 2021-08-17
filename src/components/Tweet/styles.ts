@@ -104,16 +104,26 @@ export const Description = styled.p`
 `;
 
 export const ImageContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
     margin-top: 12px;
     width: 100%;
     height: max(285px, max(175px, 41vw));
 
-    background: var(--outline);
+    /* background: var(--outline); */
     border-radius: 14px;
     
     cursor: pointer;
     &:hover {
         opacity: .7;
+    }
+
+    > img {
+        flex-shrink: 0;
+        height: 100%;
     }
 `;
 
